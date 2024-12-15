@@ -384,3 +384,133 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.newcomer {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.newcomer-info {
+    width: 427px;
+}
+.newcomer-title {
+    color: var(--titles);
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.newcomer-text {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 60px;
+    line-height: 1.67;
+}
+.newcomer-explore {
+    padding: 16px 40px;
+    color: var(--titles);
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--axent);
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.newcomer-explore:hover,
+.newcomer-explore:focus {
+    background-color: var(--seleted-price);
+}
+.newcomer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+}
+.newcomer-item {
+    width: 288px;
+    height: 284px;
+    padding: 28px 21px;
+}
+.newcomer-name {
+    font-size: 24px;
+    color: var(--titles);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.newcomer-price {
+    color: var(--price);
+}
+.newcomer-desc {
+    margin-bottom: 30px;
+    color: var(--text);
+    line-height: 1.88;
+}
+.newcomer-options {
+    display: flex;
+}
+.newcomer-like {
+    background: none;
+    border: none;
+}
+.newcomer-like::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url(./img/like.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.newcomer-folder {
+    background: none;
+    border: none;
+}
+.newcomer-folder::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url(./img/folder.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 43px;
+    cursor: pointer;
+}
+.newcomer-visit {
+    padding: 9px 35px;
+    cursor: pointer;
+    background: none;
+    border: transparent;
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 600;
+}
+.newcomer-item:hover .newcomer-visit{
+    background-color: var(--axent);
+    color: var(--titles);
+}
+.newcomer-item:hover .newcomer-price{
+    color: var(--seleted-price);
+}
+.newcomer-item {
+    border: 2px solid transparent;
+}
+.newcomer-item:hover {
+    background-image: radial-gradient(farthest-corner at 340px 40px, var(--first-gradient) 0%, var(--gradient) 25%);
+    border: 2px solid;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    border-image-source: linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
+    margin-top: -20px;
+}
+.newcomer-wrap {
+    display: flex;
+    margin-bottom: 30px;
+}
+.newcomer-img {
+    width: 64px;
+    height: 64px;
+    margin-right: 30px;
+}
