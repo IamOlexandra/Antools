@@ -574,10 +574,9 @@ body {
     background-color: var(--main);
     border: transparent;
     border-radius: 15px;
-    padding: 22px 152px 22px 55px;
+    padding: 22px 152px 22px 24px;
     color: var(--titles);
     font-size: 14px;
-    background-image: url(./img/search.svg);
     background-repeat: no-repeat;
     background-position: 18px center;
     width: 498px;
@@ -606,6 +605,9 @@ body {
 }
 .become-form {
     margin: 0 auto;
+}
+.become-wrap {
+    display: flex;
 }
 
 .footer {
