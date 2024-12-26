@@ -305,6 +305,10 @@ body {
     color: var(--text);
     font-weight: 600;
 }
+.popular-item:hover .popular-visit:hover,
+.popular-visit:focus {
+    background-color: var(--seleted-price);
+}
 .popular-item:first-child,
 .popular-item:nth-child(2),
 .popular-item:nth-child(3) {
@@ -486,6 +490,10 @@ body {
     border-radius: 8px;
     color: var(--text);
     font-weight: 600;
+}
+.newcomer-item:hover .newcomer-visit:hover,
+.newcomer-visit:focus {
+    background-color: var(--seleted-price);
 }
 .newcomer-item:hover .newcomer-visit{
     background-color: var(--axent);
