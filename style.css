@@ -182,7 +182,7 @@ body {
     display: inline-block;
     width: 34px;
     height: 34px;
-    background-image: url(/img/facebook.svg);
+    background-image: url(./img/facebook.svg);
     background-repeat: no-repeat;
 }
 .hero-instagram::before {
@@ -190,7 +190,7 @@ body {
     display: inline-block;
     width: 34px;
     height: 34px;
-    background-image: url(/img/instagram.svg);
+    background-image: url(./img/instagram.svg);
     background-repeat: no-repeat;
 }
 .hero-twitter::before {
@@ -198,7 +198,7 @@ body {
     display: inline-block;
     width: 36px;
     height: 36px;
-    background-image: url(/img/twitter.svg);
+    background-image: url(./img/twitter.svg);
     background-repeat: no-repeat;
 }
 .hero-twitter {
