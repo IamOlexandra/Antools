@@ -516,9 +516,8 @@ body {
 }
 
 .response {
-    margin-bottom: 358px;
-    display: flex;
-    align-items: center;
+    position: relative;
+    margin-bottom: 267px;
 }
 .response-img {
     width: 399px;
@@ -557,6 +556,40 @@ body {
     background-image: url(./img/quote.svg);
     background-repeat: no-repeat;
     padding-top: 50px;
+}
+.response-block {
+    align-items: center;
+    display: none;
+}
+.response-visible {
+    display: flex;
+}
+.response-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: none;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#response-left {
+    background-image: url(./img/left-arrow.svg);
+}
+#response-left:hover,
+#response-left:focus {
+    background-image: url(./img/left-arrow-hover.svg);
+}
+#response-right {
+    left: 1170px;
+    background-image: url(./img/right-arrow.svg);
+}
+#response-right:hover,
+#response-right:focus {
+    background-image: url(./img/right-arrow-hover.svg);
 }
 
 .become {

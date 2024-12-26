@@ -9,6 +9,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Antools</title>
+        <script>
+            var currentVisible = 0;
+            function moveSlider(step) {
+                document.getElementsByClassName("response-block")[currentVisible].classList.remove("response-visible");
+                currentVisible = currentVisible + step;
+                if (currentVisible > 2) {
+                    currentVisible = 0;
+                }
+                if (currentVisible < 0) {
+                    currentVisible = 2;
+                }
+                document.getElementsByClassName("response-block")[currentVisible].classList.add("response-visible");
+            }
+        </script>
     </head>
     <body>
         <header class="header container">
@@ -240,16 +254,44 @@
                 </ul>
             </section>
             <section class="response container">
-                <div class="response-wrap">
-                    <img src="./img/man.png" alt="Ronald Richards" class="response-img">
-                <div class="response-sign">
-                    <h3 class="response-name">Ronald Richards</h3>
-                    <p class="response-profession">Product Manager</p>
+                <button id="response-left" class="response-button" type="button" onclick="moveSlider(-1)"></button>
+                <button id="response-right" class="response-button" type="button" onclick="moveSlider(1)"></button>
+                <div class="response-block response-visible">
+                    <div class="response-wrap">
+                        <img src="./img/man.png" alt="Ronald Richards" class="response-img">
+                        <div class="response-sign">
+                            <h3 class="response-name">Ronald Richards</h3>
+                            <p class="response-profession">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="response-text">
+                        Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                    </p>
                 </div>
+                
+                <div class="response-block">
+                    <div class="response-wrap">
+                        <img src="./img/woman.png" alt="Nelson Elliana" class="response-img">
+                        <div class="response-sign">
+                            <h3 class="response-name">Nelson Elliana</h3>
+                            <p class="response-profession">Business Analyst</p>
+                        </div>
+                    </div>
+                    <p class="response-text">
+                        Vivamus id accumsan erat. In orci dolor, scelerisque quis enim id, mattis faucibus purus. Curabitur vel purus vehicula, venenatis libero ac, finibus quam. In placerat varius purus, vitae iaculis justo commodo id. Nulla ut semper est, viverra facilisis magna. Orci varius natoque penatibus et magnis.
                 </div>
-                <p class="response-text">
-                    Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-                </p>
+                <div class="response-block">
+                    <div class="response-wrap">
+                        <img src="./img/man2.png" alt="Carter Henley" class="response-img">
+                        <div class="response-sign">
+                            <h3 class="response-name">Carter Henley</h3>
+                            <p class="response-profession">Support Specialist</p>
+                        </div>
+                    </div>
+                    <p class="response-text">
+                        Integer dolor turpis, euismod non purus non, cursus luctus dui. Vestibulum egestas arcu nunc. Quisque tincidunt risus eget mollis luctus. Nam luctus accumsan tellus, vel tincidunt enim convallis eget. Etiam imperdiet vel enim vitae viverra. Donec sed accumsan libero, vel placerat eros. Nam id pharetra arcu. Curabitur vulputate odio in.
+                    </p>
+                </div>
             </section>
             <section class="become container">
                 <h2 class="become-title">Become a contributor?</h2>
