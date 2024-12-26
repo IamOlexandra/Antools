@@ -8,21 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="./script.js"></script>
         <title>Antools</title>
-        <script>
-            var currentVisible = 0;
-            function moveSlider(step) {
-                document.getElementsByClassName("response-block")[currentVisible].classList.remove("response-visible");
-                currentVisible = currentVisible + step;
-                if (currentVisible > 2) {
-                    currentVisible = 0;
-                }
-                if (currentVisible < 0) {
-                    currentVisible = 2;
-                }
-                document.getElementsByClassName("response-block")[currentVisible].classList.add("response-visible");
-            }
-        </script>
     </head>
     <body>
         <header class="header container">
