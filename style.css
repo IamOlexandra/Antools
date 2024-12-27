@@ -54,6 +54,7 @@ body {
 .header-logo:hover,
 .header-logo:focus {
     color: var(--axent);
+    outline: none;
 }
 .header-logo::before {
     content: "";
@@ -78,6 +79,7 @@ body {
 .header-link:hover,
 .header-link:focus {
     color: var(--axent);
+    outline: none;
 }
 .header-buttons {
     width: 244px;
@@ -105,10 +107,12 @@ body {
 .header-singup:hover,
 .header-singup:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .header-login:hover,
 .header-login:focus {
     color: var(--axent);
+    outline: none;
 }
 
 .hero {
@@ -173,39 +177,51 @@ body {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .hero-list {
     display: flex;
 }
-.hero-facebook::before {
-    content: "";
+
+.hero-socialnetwork {
+    margin-right: 32px;
+}
+.hero-facebook {
     display: inline-block;
     width: 34px;
     height: 34px;
     background-image: url(./img/facebook.svg);
     background-repeat: no-repeat;
 }
-.hero-instagram::before {
-    content: "";
+.hero-facebook:hover,
+.hero-facebook:focus {
+    background-image: url(./img/facebook-hover.svg);
+    outline: none;
+}
+.hero-instagram {
     display: inline-block;
     width: 34px;
     height: 34px;
     background-image: url(./img/instagram.svg);
     background-repeat: no-repeat;
 }
-.hero-twitter::before {
-    content: "";
+.hero-instagram:hover,
+.hero-instagram:focus {
+    background-image: url(./img/instagram-hover.svg);
+    outline: none;
+}
+.hero-twitter {
     display: inline-block;
     width: 36px;
     height: 36px;
     background-image: url(./img/twitter.svg);
     background-repeat: no-repeat;
-}
-.hero-twitter {
     margin-right: 0;
 }
-.hero-socialnetwork {
-    margin-right: 32px;
+.hero-twitter:hover,
+.hero-twitter:focus {
+    background-image: url(./img/twitter-hover.svg);
+    outline: none;
 }
 
 .popular {
@@ -265,13 +281,11 @@ body {
 }
 .popular-options {
     display: flex;
+    align-items: center;
 }
 .popular-like {
     background: none;
     border: none;
-}
-.popular-like::before {
-    content: "";
     display: block;
     width: 42px;
     height: 42px;
@@ -281,12 +295,15 @@ body {
     margin-right: 12px;
     cursor: pointer;
 }
+.popular-like:hover,
+.popular-like:focus {
+    background-color: var(--main);
+    border-radius: 8px;
+    outline: none;
+}
 .popular-folder {
     background: none;
     border: none;
-}
-.popular-folder::before {
-    content: "";
     display: block;
     width: 42px;
     height: 42px;
@@ -295,6 +312,12 @@ body {
     background-repeat: no-repeat;
     margin-right: 130px;
     cursor: pointer;
+}
+.popular-folder:hover,
+.popular-folder:focus {
+    background-color: var(--main);
+    border-radius: 8px;
+    outline: none;
 }
 .popular-visit {
     padding: 9px 35px;
@@ -308,6 +331,7 @@ body {
 .popular-item:hover .popular-visit:hover,
 .popular-visit:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .popular-item:first-child,
 .popular-item:nth-child(2),
@@ -347,6 +371,7 @@ body {
 .popular-load:focus {
     background-color: var(--border);
     border: solid 1px transparent;
+    outline: none;
 }
 
 .trusted {
@@ -423,6 +448,7 @@ body {
 .newcomer-explore:hover,
 .newcomer-explore:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .newcomer-list {
     display: flex;
@@ -451,13 +477,11 @@ body {
 }
 .newcomer-options {
     display: flex;
+    align-items: center;
 }
 .newcomer-like {
     background: none;
     border: none;
-}
-.newcomer-like::before {
-    content: "";
     display: block;
     width: 42px;
     height: 42px;
@@ -467,12 +491,15 @@ body {
     margin-right: 12px;
     cursor: pointer;
 }
+.newcomer-like:hover,
+.newcomer-like:focus {
+    background-color: var(--main);
+    border-radius: 8px;
+    outline: none;
+}
 .newcomer-folder {
     background: none;
     border: none;
-}
-.newcomer-folder::before {
-    content: "";
     display: block;
     width: 42px;
     height: 42px;
@@ -481,6 +508,12 @@ body {
     background-repeat: no-repeat;
     margin-right: 43px;
     cursor: pointer;
+}
+.newcomer-folder:hover,
+.newcomer-folder:focus {
+    background-color: var(--main);
+    border-radius: 8px;
+    outline: none;
 }
 .newcomer-visit {
     padding: 9px 35px;
@@ -494,6 +527,7 @@ body {
 .newcomer-item:hover .newcomer-visit:hover,
 .newcomer-visit:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .newcomer-item:hover .newcomer-visit{
     background-color: var(--axent);
@@ -590,6 +624,7 @@ body {
 #response-left:hover,
 #response-left:focus {
     background-image: url(./img/left-arrow-hover.svg);
+    outline: none;
 }
 #response-right {
     left: 1170px;
@@ -598,6 +633,7 @@ body {
 #response-right:hover,
 #response-right:focus {
     background-image: url(./img/right-arrow-hover.svg);
+    outline: none;
 }
 
 .become {
@@ -638,6 +674,7 @@ body {
 .become-input:focus-visible {
     outline: none;
     border: 2px solid var(--text);
+    outline: none;
 }
 .become-button {
     position: absolute;
@@ -654,6 +691,7 @@ body {
 .become-button:hover,
 .become-button:focus {
     background-color: var(--seleted-price);
+    outline: none;
 }
 .become-form {
     position: relative;
@@ -681,6 +719,7 @@ body {
 .footer-logo:hover,
 .footer-logo:focus {
     color: var(--axent);
+    outline: none;
 }
 .footer-logo::before {
     content: "";
@@ -739,4 +778,5 @@ body {
 .footer-link:hover,
 .footer-link:focus {
     color: var(--axent);
+    outline: none;
 }
